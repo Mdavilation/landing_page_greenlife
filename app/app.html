@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Life - Jardinería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="/img/logo.png" alt="Green Life Jardinería" class="logo">
+            <h2>PERSONALIZA TU JARDÍN</h2>
+            <div class="input-group">
+                <input class="material" type="text" placeholder="Material">
+                <input class="cantidad" type="number" placeholder="00">
+                <button class="add-btn">Agregar</button>
+            </div>
+            <ul id="item-list">
+            </ul>
+            <p class="total">Total: <span id="total-amount"></span>productos</p>
+            <p class="factura">Número de factura: <span id="factura-number"></span></p>
+            <button class="contact-btn">CONTACTA A UN ASESOR</button>
+            <a onclick="window.location.href='../index.html'" class="back-link">VUELVE A LA PÁGINA PRINCIPAL</a>
+        </div>
+    </div>
+</body>
+</html>
