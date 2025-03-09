@@ -123,3 +123,55 @@ nav ul li a:hover {
         margin-top: 1rem;
     }
 }
+#servicios {
+    background-color: #F0ECCE;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    /* padding: 2rem; */
+}
+
+#servicios h2 {
+    color: #96524F;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#servicios h3 {
+    color: #F0D000;
+}
+
+#servicios_texto {
+    position: relative;
+    transform: translateY(-40px);
+}
+
+#servicios p {
+    color: #F0ECCE;
+}
+
+#servicios_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    padding-top: 50px;
+}
+
+.servicio {
+    background: #96524F;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+.servicio img {
+    width: 30%;
+    border-radius: 10px;
+    transform: translateY(-80px);
+}
