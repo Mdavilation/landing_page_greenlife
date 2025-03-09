@@ -1,0 +1,39 @@
+/* Reset General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+html,body {
+
+    font-optical-sizing: auto;
+    background-color: #F0ECCE;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #F0ECCE;
+    padding: 1rem;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c8e6c9;
+}
