@@ -28,14 +28,15 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #265C5A;
     font-weight: bold;
     font-size: 1.2rem;
     transition: color 0.3s;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
-    color: #c8e6c9;
+    color: #659510;
 }
 #green_life {
     background: url('img/fondoo1.png') no-repeat center center/cover;
@@ -263,6 +264,10 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 20px;
+}
+
+#enviar:hover{
+    background-color: #F0D000;
 }
 
 footer {
