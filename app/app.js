@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let total = 0;
         items.forEach((item, index) => {
             const li = document.createElement("li");
-            li.innerHTML = `<span>${item.material}</span> - <span>${item.cantidad}</span> 
+            li.innerHTML = `<span id="material-spn">${item.material}</span><span id="cantidad-spn">${item.cantidad}</span> 
                             <button class="delete-btn" data-index="${index}">X</button>`;
             itemList.appendChild(li);
             total += parseInt(item.cantidad, 10);
