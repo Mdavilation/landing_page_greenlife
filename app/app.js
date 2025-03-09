@@ -25,4 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
         totalAmount.textContent = total;
         localStorage.setItem("items", JSON.stringify(items));
     }
+    addButton.addEventListener("click", function () {
+        const material = materialInput.value.trim();
+        const cantidad = cantidadInput.value.trim();
+        
+        if (material && cantidad && !isNaN(cantidad) && cantidad > 0) {
+            items.push({ material, cantidad });
+            renderItems();
+            materialInput.value = "";
+            cantidadInput.value = "";
+        }
+    });
 });
