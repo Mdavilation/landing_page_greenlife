@@ -58,3 +58,68 @@ nav ul li a:hover {
     color: #F0ECCE;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
+#sobre_nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6b9c2d; /* Color de fondo verde */
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+#sobre_nosotros_texto {
+    width: 50%;
+    color: #f0f0d8; /* Color de texto */
+}
+
+#sobre_nosotros_texto h2 {
+    width: 50%;
+    font-size: 3rem;
+    /* font-weight: bold; */
+    color: #f0f0d8;
+}
+
+#sobre_nosotros_texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#sobre_nosotros_texto button {
+    background-color: #265C5A;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#sobre_nosotros_texto button:hover {
+    background-color: #1e4a48;
+}
+
+#sobre_nosotros_imagen img {
+    width: 100%;
+    /* max-width: 300px; */
+    border-radius: 15px;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    #sobre_nosotros {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    #sobre_nosotros_texto {
+        width: 100%;
+    }
+
+    #sobre_nosotros_imagen img {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
