@@ -36,4 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
             cantidadInput.value = "";
         }
     });
+    itemList.addEventListener("click", function (e) {
+        if (e.target.classList.contains("delete-btn")) {
+            const index = e.target.getAttribute("data-index");
+            items.splice(index, 1);
+            renderItems();
+        }
+    });
+
+    renderItems();
 });
