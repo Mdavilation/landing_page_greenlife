@@ -175,3 +175,143 @@ nav ul li a:hover {
     border-radius: 10px;
     transform: translateY(-80px);
 }
+#resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 3rem 0;
+}
+
+#resultados_imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+#texto_frase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #265C5A;
+    border-radius: 100px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 2rem;
+}
+
+#texto_frase h2 {
+    color: #F0ECCE;
+    font-size: 3rem;
+}
+
+#texto_frase p {
+    color: #F0ECCE;
+    font-size: 2rem;
+}
+
+#contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #265C5A;
+}
+
+#contacto_texto form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* max-width: 500px; */
+    width: 100%;
+}
+
+#contacto_email-telefono {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contacto input {
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #F0ECCE;
+    font-weight: bold;
+    text-align: left;
+}
+
+#mensaje {
+    height: 100px;
+    resize: none;
+}
+
+#contacto_imagen img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#enviar {
+    padding: 1rem 2rem;
+    background-color: #659510;
+    font-size: 30px;
+    color: #F0ECCE;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #F0ECCE;
+    color: #265C5A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    margin: 1rem;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+    }
+
+    footer img {
+        width: 120px;
+    }
+
+    footer label {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
